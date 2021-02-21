@@ -1,0 +1,18 @@
+ABCD-A1-TOR-1# sh l2route mac all
+
+Flags -(Rmac):Router MAC (Stt):Static (L):Local (R):Remote (V):vPC link
+(Dup):Duplicate (Spl):Split (Rcv):Recv (AD):Auto-Delete (D):Del Pending
+(S):Stale (C):Clear, (Ps):Peer Sync (O):Re-Originated (Nho):NH-Override
+(Pf):Permanently-Frozen, (Orp): Orphan
+
+Topology    Mac Address    Prod   Flags         Seq No     Next-Hops
+----------- -------------- ------ ------------- ---------- ---------------------------------------
+60          0000.0c07.ac3c Local  L,R           0          Po11
+70          0000.0c07.ac3c Local  L,R           0          Po11
+60          0000.0c07.ac3d Local  L,R           0          Po11
+60          0000.1234.5677 BGP    Rcv           0          10.123.456.7 (Label: 60)
+60          0000.1234.5678 BGP    Rcv           0          10.123.567.7 (Label: 60)
+60          0000.1234.5679 Local  L,            0          E1/1
+60          0000.1234.9876 Local  R,            0          E1/1/1
+60          0000.1234.5678 Local  L,            0          E1/1.615
+60          0000.1234.7890 Local  L,            0          E1/1/1.678
