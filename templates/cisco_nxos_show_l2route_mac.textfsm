@@ -1,0 +1,12 @@
+Value Key TOPOLOGY (\d+)
+Value Key MAC_ADDRESS ([0-9a-f]{4}\.[0-9a-f]{4}\.[0-9a-f]{4})
+Value PROD (\w+)
+Value FLAGS (\S+)
+Value SEQ_NO (\d+)
+Value NEXT_HOP (([eE]\d+\/\d+(\/\d+)?(\.\d+)?)|(Po\d+)|(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))
+Value LABEL (\d+)
+
+Start
+ ^${TOPOLOGY}\s+${MAC_ADDRESS}\s+${PROD}\s+${FLAGS}\s+${SEQ_NO}\s+${NEXT_HOP}(\s+\(Label: ${LABEL}\))? -> Record
+
+EOF
